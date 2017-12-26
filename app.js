@@ -8,8 +8,8 @@ app.use(bodyParser.urlencoded({ extended : false }));
 app.use(bodyParser.json());
 
 
-var appleRoute = require('./routes/appleRoute.js');
-var orangeRoute = require('./routes/orangeRoute.js');
+var appleRoute = require('./appleRoute.js');
+var orangeRoute = require('./orangeRoute.js');
 
 app.use('/apples',appleRoute);
 app.use('/oranges',orangeRoute);
