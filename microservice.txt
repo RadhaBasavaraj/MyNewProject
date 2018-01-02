@@ -1,0 +1,61 @@
+Functionality :
+
+API client ---------(acctId, acctType, BeginDate, EndDate)-------------> API Server
+
+@API server(js file under common/modules)
+
+1. Validations on BeginDate and EndDate
+	-> If these dates are not provided, default to current dates
+	-> If BeginDate > EndDate, throw error
+	-> Check if the dates are valid and not future dated
+	
+2.Call VCM REST API with the inputs - use Promise and config
+
+3.Query ODS Mongo DB to get old transactions
+
+4.Combine the data into array of JSON objects
+
+5.Return the response to API client
+
+
+
+Test Case : 
+
+
+GIVEN : The required inputs to invoke the service
+
+WHEN : The REST API is invoked and results are fetched
+
+THEN : The results must contain all datapoints defined in JSON files for DD, SV and CD accounts
+
+AND : The results(transaction count) must match the WingSpan SOAP service results
+
+
+Add-ons : 
+
+1. Application logs
+2. Mocha tests
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+New year devliverables :
+
+1. Brand new payment micro service with following features :
+	1.REST API server and client
+	2.Unit testing with Cucumber, Mocha, Chai and nodejs assert
+	3.DB connection(Oracle)
+	4.SOAP service invocation
+	5.JSON data manupulation
+	6.Application logging
+	7.Use the language fundamentals like callback functions and Promise
+2. Persist this application in github
+
+3. Clone the nextgen repo in NP1, create your branch and make modifications. 
+
+
+
+------------------------------------------------------------------------------------
+
+
