@@ -1,0 +1,73 @@
+Technical :
+
+1.Analyze listtransactions service - 
+
+Inputs : account_number, account_type(DD, CD, SV), beginDate, endDate, tranCode( IHD )
+
+1.Check expected results - DD, CD, SV
+2.List the possible VCM errors besides - "NO ACCOUNT MASTER FOUND"
+3.Check which VCM region is being hit - 2199 or 2111
+4.Analyse VCM adapter service - config file for IHD , DD, CD, SV
+5.Write exhausted unit test cases
+
+2.MQ IPT, Vendor authentication for microservices, email integration(Messaging Team)
+
+3.EagleVision integration
+
+4.Posting use case
+
+-------------------------------------------------------------------------------------------------------------
+
+Business : 
+
+1. Analyze each use case with WireRoomOps - ACI, EagleConnect, UI, File based, SWIFT
+
+---> Inputs will be a combination of : 
+> Transaction Type - debits and credits
+> Account Type - FRB customer, FRB GL, OFI(Local), OFI(International)
+> Transaction Currency - USD and Foreign Currency
+
+1,000,000              - Million
+1,000,000,000          - Billion
+1,000,000,000,000      - Trillion
+
+2. Is bridge account and fed account the same for all wires ?
+
+3. Understand the accounting and reconciliation part
+
+4. List of business rules and business errors
+
+5. External files uploaded
+
+6. Reference datasources - BIC, ABN, TotalPLus
+
+7. Cut-Off times and SLAs
+
+8. Customer notifications(email, fax, sms, phone calls) and reports
+
+9.Exception flows - returns and rejects
+
+
+-----------------------------------------------------------------------------------
+
+Documents :
+
+1. Technical Requirements Documents
+2. Interface Specification Documents
+3. Use case documents
+4. Data Mapping documents
+5. Alert scenarios, incidents and priorities
+
+
+-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
